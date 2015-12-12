@@ -12,6 +12,8 @@ H1 {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 		font-size: 36px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
 }
 
 #headline-1 {
@@ -21,6 +23,7 @@ H1 {
 	background-size: cover;
 	background-repeat: no-repeat;	
 	height: 25vh;
+  overflow:hidden;
 }
 
 #headline-2 {
@@ -30,6 +33,7 @@ H1 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 25vh;
+  overflow:hidden;
 }
 
 #headline-3 {
@@ -39,6 +43,7 @@ H1 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 25vh;
+  overflow:hidden;
 
 	/* this particular cat's face was not showing in some of the pics
 		so moving him over a bit helped to resolve the issue */
@@ -53,6 +58,7 @@ H1 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 25vh;
+  overflow:hidden;
 }
 
 /* when width is < 768, divs should be stacked
