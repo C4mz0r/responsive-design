@@ -14,7 +14,12 @@ H1 {
     font-weight: 900;
 }
 
+div > p {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
 
+}
 
 
 /* common settings for each headline div */
@@ -71,7 +76,6 @@ section > h1 {
 
 /* summary items have a summary image and description */
 .summary {
-  max-width: 250px;
   min-height: 200px;
   max-height: 250px;
   float: left;
@@ -86,6 +90,9 @@ section > h1 {
   min-height: 100px;
 }
 
+section {
+  clear: both;
+}
 
 /* when width is < 768, divs should be stacked
 		e.g.
@@ -95,7 +102,18 @@ section > h1 {
 		H4
  */
 
-/* THIS SPACE INTENTIONALLY LEFT BLANK - USING DEFAULT SETTING */
+/* default (before media queries applied) so will apply to below 320px width */
+/* 100% means only one summary on each row at low resolution */
+  .summary {
+    width: 100%;      
+  }
+
+@media only screen and (min-width: 320px) {
+  /* 50% means 2 summary on each row */
+  .summary {    
+    width: 50%;      
+  }
+}
 
 /* when width is b/w 768 and 1024, div 1 on top and the rest in 3 columns on row below 
 		e.g.
@@ -117,6 +135,13 @@ section > h1 {
 			width: 33.3%;	
 			height: 25vh;			
 		}
+
+    /* 25% means 4 summary on each row */
+    .summary {      
+      width: 25%;      
+    }
+
+    
 }
 
 /* when width is >= 1024, div one on the left side, div 2 plus div 3 and 4 in the row below it, on the right hand side
@@ -152,4 +177,9 @@ section > h1 {
 			width: 25%;	
 			height: 25vh;			
 		}
+
+    /* 16.6% means 6 summary on each row */
+    .summary {
+      width: 16.6%;      
+    }
 }
