@@ -1,6 +1,6 @@
 * {
   -moz-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 
@@ -16,50 +16,47 @@ H1 {
     font-weight: 900;
 }
 
-#headline-1 {
-  background-color: red;
+
+/* common settings for each headline div */
+[id*=#headline]{  
 	min-height: 126px;
-	background-image: url("images/cat1.jpg");
+	height: 25vh;
+  overflow:hidden;   
+}
+
+
+#headline-1 {
+  background-image: url("images/cat1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;	
-	height: 25vh;
-  overflow:hidden;
+  border: 5px solid transparent; 
 }
 
 #headline-2 {
-  background-color: orange;
-	min-height: 126px;
-	background-image: url("images/cat2.jpg");
+  background-image: url("images/cat2.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
-	height: 25vh;
-  overflow:hidden;
+	background-repeat: no-repeat;	
+  border: 5px solid transparent; 
 }
 
 #headline-3 {
-  background-color: white;
-	min-height: 126px;
-	background-image: url("images/cat3.jpg");
+  background-image: url("images/cat3.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 25vh;
-  overflow:hidden;
+  border: 5px solid transparent; 	
 
-	/* this particular cat's face was not showing in some of the pics
+  /* this particular cat's face was not showing in some of the pics
 		so moving him over a bit helped to resolve the issue */
 	background-position: -100px 0px;
-
 }
 
 #headline-4 {
-  background-color: green;
-	min-height: 126px;
-	background-image: url("images/cat4.jpg");
+  background-image: url("images/cat4.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
-	height: 25vh;
-  overflow:hidden;
+	background-repeat: no-repeat;	
+  border: 5px solid transparent; 
 }
+
 
 /* when width is < 768, divs should be stacked
 		e.g.
