@@ -1,0 +1,76 @@
+
+footer {
+  clear: both;
+}
+
+#headline-1 {
+  background-color: red;
+}
+
+#headline-2 {
+  background-color: orange;
+}
+
+#headline-3 {
+  background-color: yellow;
+}
+
+#headline-4 {
+  background-color: green;
+}
+
+/* when width is < 768, divs should be stacked
+		e.g.
+		H1
+		H2
+		H3
+		H4
+ */
+
+/* THIS SPACE INTENTIONALLY LEFT BLANK - USING DEFAULT SETTING */
+
+/* when width is b/w 768 and 1024, div 1 on top and the rest in 3 columns on row below 
+		e.g.
+			 H1
+		H2 H3 H4
+*/
+@media only screen and (min-width: 768px) {
+
+		#headline-1	{
+			float:left;
+			width: 100%;		
+		}
+
+		#headline-2,
+		#headline-3,
+		#headline-4	{
+			float:left;
+			width: 33.3%;				
+		}
+}
+
+/* when width is >= 1024, div one on the left side, div 2 plus div 3 and 4 in the row below it, on the right hand side
+		e.g.
+					|   H2
+			H1  | H3  H4 
+					|
+*/
+
+@media only screen and (min-width: 1024px) {
+		
+		#headline-1	{
+			float:left;
+			width: 50%;				
+		}
+
+		#headline-2	{
+			float:left;
+			width: 50%;	
+		}
+
+		#headline-3,
+		#headline-4	{
+			float:right;
+			width: 25%;				
+		}
+}
