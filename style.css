@@ -9,19 +9,27 @@ footer {
 }
 
 H1 {
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 		font-size: 36px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
 }
 
 
+
+
 /* common settings for each headline div */
 [id*=#headline]{  
 	min-height: 126px;
-	height: 25vh;
-  overflow:hidden;   
+	height: 25vh; 
+}
+
+div > h1 {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+section > h1 {
+  color: #FF4020;
 }
 
 
@@ -30,6 +38,7 @@ H1 {
 	background-size: cover;
 	background-repeat: no-repeat;	
   border: 5px solid transparent; 
+  overflow: hidden;
 }
 
 #headline-2 {
@@ -37,6 +46,7 @@ H1 {
 	background-size: cover;
 	background-repeat: no-repeat;	
   border: 5px solid transparent; 
+  overflow: hidden;
 }
 
 #headline-3 {
@@ -44,6 +54,7 @@ H1 {
 	background-size: cover;
 	background-repeat: no-repeat;
   border: 5px solid transparent; 	
+  overflow: hidden;
 
   /* this particular cat's face was not showing in some of the pics
 		so moving him over a bit helped to resolve the issue */
@@ -55,6 +66,24 @@ H1 {
 	background-size: cover;
 	background-repeat: no-repeat;	
   border: 5px solid transparent; 
+  overflow: hidden;
+}
+
+/* summary items have a summary image and description */
+.summary {
+  max-width: 250px;
+  min-height: 200px;
+  max-height: 250px;
+  float: left;
+  border: 5px solid transparent;
+  overflow: hidden;
+}
+
+.summary-image {
+  background-image: url("images/catnip.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100px;
 }
 
 
