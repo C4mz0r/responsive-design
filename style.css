@@ -1,22 +1,58 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
 
 footer {
   clear: both;
 }
 
+H1 {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		font-size: 36px;
+}
+
 #headline-1 {
   background-color: red;
+	min-height: 126px;
+	background-image: url("images/cat1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+	height: 25vh;
 }
 
 #headline-2 {
   background-color: orange;
+	min-height: 126px;
+	background-image: url("images/cat2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 25vh;
 }
 
 #headline-3 {
-  background-color: yellow;
+  background-color: white;
+	min-height: 126px;
+	background-image: url("images/cat3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 25vh;
+
+	/* this particular cat's face was not showing in some of the pics
+		so moving him over a bit helped to resolve the issue */
+	background-position: -100px 0px;
+
 }
 
 #headline-4 {
   background-color: green;
+	min-height: 126px;
+	background-image: url("images/cat4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 25vh;
 }
 
 /* when width is < 768, divs should be stacked
@@ -38,14 +74,16 @@ footer {
 
 		#headline-1	{
 			float:left;
-			width: 100%;		
+			width: 100%;	
+			height: 50vh;
 		}
 
 		#headline-2,
 		#headline-3,
 		#headline-4	{
 			float:left;
-			width: 33.3%;				
+			width: 33.3%;	
+			height: 25vh;			
 		}
 }
 
@@ -60,17 +98,26 @@ footer {
 		
 		#headline-1	{
 			float:left;
-			width: 50%;				
+			width: 50%;		
+			min-height: 252px;		
+			height: 50vh;
 		}
 
 		#headline-2	{
 			float:left;
-			width: 50%;	
+			width: 50%;
+			height: 25vh;	
 		}
 
-		#headline-3,
+		#headline-3 {
+			float:left;
+			width: 25%;	
+			height: 25vh;	
+		}	
+
 		#headline-4	{
 			float:right;
-			width: 25%;				
+			width: 25%;	
+			height: 25vh;			
 		}
 }
